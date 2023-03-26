@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+  
+.tablero {
+    width: 90%;
+    max-width: 1200px;
+    height: 100vh;
+   /* padding: 30px 20px;*/
+    margin: auto;
+/*border: 3px solid rgb(128, 0, 255);*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   /* background-color: green;*/
+        
+}
+
+.contenedor-btn{
+/*border: 2px solid yellow;*/
+    margin: 30px auto;
+
+}
+
+.contenedor-cartas{
+/*border: 2px solid green;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tablero button {
+    color: white;
+    background-color: #d63e06;
+    border-radius: 45px 45px 45px 45px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.tablero button:hover{
+    background-color: #e85a26;
+}
+  
+.tablero .superior {
+    display: flex;
+    justify-content: space-around;
+/*border: 2px solid red;*/
+  }
+
+  
+.tablero .superior .mazo {
+    display: flex;
+  }
+  
+
+.tablero .superior .casa {
+    display: flex;
+  }
+
+  
+.tablero .inferior {
+    display: flex;
+    justify-content: center;
+  /*  border: 2px solid blue;*/
+}
+  
+
+.espacio-carta {
+    border: 1px solid #d63e06;
+    width: 97px;
+    height: 151px;
+    margin: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+  
+
+.carta {
+    position: absolute;
+    border: 1px solid #888;
+    border-radius: 5px;
+    height: 153px;
+}
+ 
+
+  .carta-mazo {
+/*position: relative;*/
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-image: url(dorso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+
+.pila-inicial {
+    position: absolute;
+}
